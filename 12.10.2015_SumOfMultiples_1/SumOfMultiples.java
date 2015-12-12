@@ -10,6 +10,7 @@
 public class SumOfMultiples {
 
 	public static void main(String[] args) {
+		long start = System.nanoTime();
 
 		int lim = 1000;
 		boolean lim_met = false;
@@ -27,5 +28,7 @@ public class SumOfMultiples {
 		}
 
 		System.out.println(sum);
+		long end = System.nanoTime();
+		System.out.println(end - start);
 	}
 }
